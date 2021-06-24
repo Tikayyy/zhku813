@@ -1,0 +1,24 @@
+footer {
+    background: rgb(18,41,73);
+    padding: 30px;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > .row {
+    color: white;
+}
+
+footer table td {
+    padding: 15px 25px;
+    color: white;
+}
+
+@media (max-width: 426px) {
+    footer {
+        padding: 25px;
+    }
+}

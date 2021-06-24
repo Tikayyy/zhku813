@@ -1,0 +1,166 @@
+header {
+    position: relative;
+    background: rgba(18,41,73,.9);
+    width: 100%;
+    color: white;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-banner {
+    margin-top: -88px;
+    background: url('../images/city4.jpg') 0 0 no-repeat;
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    height: 495px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(18,41,73,.9);
+}
+
+.image-banner.no-main {
+    background: url('../images/city4.jpg') 0 -160px no-repeat;
+    background-size: cover;
+    height: 252px;
+}
+
+header img {
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+}
+
+header a {
+    text-transform: uppercase;
+}
+
+header .links-container {
+    display: flex;
+}
+
+header i.fa-sign-in-alt{
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+header .links-container a {
+    padding: 0 25px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+label.false {
+    display: none;
+}
+
+.bars {
+    font-size: 40px;
+    display: none;
+    padding: 10px;
+}
+
+.bars i.fa:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.hidden-bars {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    background: rgba(18,41,73,.9);
+    display: flex;
+    flex-direction: column;
+    left: -120vw;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+
+.hidden-bars > div {
+    display: block;
+    padding: 10px;
+}
+
+.hidden-bars div {
+    margin: 15px 0;
+}
+
+#barsCheckbox {
+    display: none;
+}
+
+#barsCheckbox:checked ~ .false {
+    display: block;
+}
+
+#barsCheckbox:checked ~ .true {
+    display: none;
+}
+
+#barsCheckbox:checked + .hidden-bars{
+    left: 0;
+    display: flex;
+}
+
+.phone-container {
+    position: absolute;
+    top: 100%;
+    margin: 10px;
+    opacity: 0.9;
+    font-size: 11pt;
+}
+
+.bars-small-text {
+    font-size: 13pt;
+}
+
+@media (max-width: 460px) {
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    header .links-container a {
+        padding: 0 10px;
+    }
+
+    header div.links-container:not(.bars) {
+        display: none;
+    }
+
+    header .hidden-bars > div, .bars {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-banner.no-main {
+        background: url(../images/city4.jpg) 0 -80px no-repeat;
+    }
+}
+
+@media (min-width: 1700px) {
+    .image-banner {
+        background: url(../images/city4.jpg) 0 30% no-repeat;
+        background-size: cover;
+    }
+
+    .image-banner.no-main {
+        background: url(../images/city4.jpg) 0 29% no-repeat;
+        background-size: cover;
+    }
+}
+
+
+
+
+
