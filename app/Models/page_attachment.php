@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class page_attachment extends Model
 {
+    protected $table = 'page_attachment';
     use HasFactory;
 }

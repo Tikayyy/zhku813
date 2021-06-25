@@ -36,10 +36,9 @@
                         <img src="{{asset('images/logo.png')}}" alt="">
                     </a>
                 </div>
-
                 <div class="links-container">
                     <a href="/">Главная</a>
-                    <a href="/page/contacts">Контакты</a>
+                    <a href="{{ route('contacts') }}">Контакты</a>
                     <a href="/page/dop-contacts/">Список телефонов <br> городских служб </a>
                 </div>
             </div>
@@ -96,9 +95,9 @@
                     <div class="hidden-nav">
                         <a href="/page/tarif">Тарифы</a>
                         <a href="/page/plani-otchet">Реестр МКД</a>
-                        <a href="../files/page_attachment/Balance_2018_OOO_ZKU_813.pdf">Баланс 2018 ООО ЖКУ 813</a>
-                        <a href="../files/page_attachment/%20%d0%b1%d0%b0%d0%bb%d0%b0%d0%bd%d1%81%20%d0%bd%d0%b0%2031%20%d0%b4%d0%b5%d0%ba%d0%b0%d0%b1%d1%80%d1%8f%202019%20%d0%b3%d0%be%d0%b4%d0%b0.pdf">Баланс 2019 ООО ЖКУ 813</a>
-                        <a href="../files/page/%d0%91%d1%83%d1%85%20%d0%b1%d0%b0%d0%bb%d0%b0%d0%bd%d1%81%202020.pdf">Баланс 2020 ООО ЖКУ 813</a>
+                        <a href="#">Баланс 2018 ООО ЖКУ 813</a>
+                        <a href="#">Баланс 2019 ООО ЖКУ 813</a>
+                        <a href="#">Баланс 2020 ООО ЖКУ 813</a>
                         <a href="page/reports">Отчёты</a>
                     </div>
                 </div><div>
@@ -121,7 +120,7 @@
                     <tr>
                         <td><a href="#" target="_blank">Положение об обработке ПД</a></td>
                         <td><a href="/page/recriviz">Реквизиты</a></td>
-                        <td><a href="http://zhku813.ru/files/page_attachment/%D0%94%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B8%D1%8F%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B9%20%D1%82%D1%80%D1%83%D0%B4%D0%B0%20%D0%9E%D0%9E%D0%9E%20%D0%96%D0%9A%D0%A3%20813.pdf" target="_blank">Декларация соответствия условий труда ООО ЖКУ 813</a></td>
+                        <td><a href="#" target="_blank">Декларация соответствия условий труда ООО ЖКУ 813</a></td>
                     </tr>
                     </tbody>
                 </table>

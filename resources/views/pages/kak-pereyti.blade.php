@@ -29,11 +29,11 @@
         </div>
 
         <ul class="attachment_list">
-
-                    <li>
-                        <a href="" target="_blank"></a>
-                    </li>
-
+            @foreach($docs as $doc)
+                <li>
+                    <a href="{{$doc->file_page_attachment}}" target="_blank">{{$doc->title_page_attachment}}</a>
+                </li>
+            @endforeach
         </ul>
     </section>
     </main>

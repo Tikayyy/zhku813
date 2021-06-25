@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\news;
-use App\Models\page;
+use App\Models\page_attachment;
 
 class IndexController extends Controller
 {
@@ -29,7 +29,8 @@ class IndexController extends Controller
     }
 
     public function kak_pereyti(){
-        return view('pages/kak-pereyti');
+        $docs = page_attachment::where('id_page', 3)->get();
+        return view('pages/kak-pereyti', ['docs' => $docs]);
     }
 
     public function tarif(){
